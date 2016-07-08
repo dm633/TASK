@@ -16,7 +16,7 @@ header > div {
 	font-size: 14;
 	line-height: 22px;
 	padding-right:15px;
-	background: grey
+	background: grey;
 }
 
 #block1 {
@@ -40,21 +40,21 @@ aside {
 	font-size: 14;
 	float: left;
 	padding:5px;
+	margin-right: 5%;
 }
 
-#block7 {
-	margin-top: 20%;
-	position: absolute;
-    bottom: 0;
+aside > div {
+	/*margin-top: 20%;*/
+	border-top: 100px solid white;
+	padding: 0;
 	background: grey;
-	height: 200px;
+	height: 300px;
 }
 
 section {
 	display: block;
-	margin-left: 15%;
-	margin-bottom: 10%;
-	
+	overflow: auto;
+	margin-bottom: 10%;	
 }
 
 section > header {
@@ -70,25 +70,21 @@ section > header {
 section > article {
 	display: block;
 	background: white;
-	
-	display: flex;
-	
-	
 }
 
 section > article > div {
 	background: #c1c1c1;
 	margin: 5%;
-	width: 400px;
-	height: 250px;
-	
+	margin-left: 0;
+	width: 10em;
+	height: 15em;
+	display: inline-block;
 }
 
 section > footer {
 	display: block;
 	background: white;
-	display: flex;
-	
+	display: flex;	
 }
 
 section > footer > div {
@@ -99,6 +95,8 @@ section > footer > div {
 	line-height: 22px;
 	padding:15px;
 	background: #c1c1c1;
+
+	display: flex;
 }
 
 #block8 {
@@ -121,26 +119,36 @@ footer > div {
 	font: arial;
 	font-size: 14;
 	line-height: 22px;
-	
-	-webkit-column-width: 200px;
-    -moz-column-width: 200px;
-    column-width: 200px;
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
-    column-count: 2;
-    /*-webkit-column-gap: 30px;
-    -moz-column-gap: 30px;
-    column-gap: 30px;*/
-    -webkit-column-rule: 1px solid #ccc;
-    -moz-column-rule: 1px solid #ccc;
-    column-rule: 1px solid #ccc;
+	padding: 5%;
+}
+
+#block10 > #left {
+	float: left;
+}
+
+#block10 > #right {
+	float: right;
 }
 
 #block11 {
 	margin: 5%;
+	padding: 5%;
+	color: white;
+	font: arial;
+	font-size: 14;
+	line-height: 22px;
 }
 
+#block12_13{
+	background: white;
+}
 
+#block12_13 > div {
+	background: grey;
+	height: 45%;
+}
 
-
+#block12 {
+	margin-bottom: 8%;
+}
 
