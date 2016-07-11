@@ -1,64 +1,78 @@
 ﻿body { 
-	margin: 7%;
+	padding: 16px 100px 100px 61px;
+	width: 990px;
 }
 
 header {
 	display: block;
-
 	background: white;
 	display: inline-flex; /* Блоки одинаковой высоты */
-	width: 100%;
-	clear: both;
 }
 
 header > div {
 	display: inline-block; /* Расположение блоков в ряд */
-	text-align: right;
-	color: white;
-	font: 14px arial;
-	line-height: 10px;
-	padding: 15px;
-	padding-right: 25px;
 	background: grey;
 }
 
 #block1 {
-	width: 20%;
+	width: 122px;
+	height: 108px;
 }
 #block2 {
-	width: 55%;
-
-	margin-left: 3%;
-	margin-right: 3%;
-	height: auto;
+	width: 280px;
+	height: 108px;
+	margin-left: 23px;
+	margin-right: 23px;
+	
 }
 #block3 {
-	width: inherit;
+	width: 489px;
+	height: 95px;
+	text-align: right;
+	color: white;
+	font: 14px arial;
+	line-height: 7px;
+	padding: 14px 22px 0px 0px;
+}
+
+hr {
+	width: 960px;
+	margin-top: 15px; 
+	margin-bottom: 20px;
+	margin-left: 0px;
 }
 
 aside {
 	display: block;
-	line-height: 22px;
-	background: grey;
-	width: 200px;
+	width: 185px;
 	color: white;
 	font: 14px arial;
 	float: left;
-	margin-right: 3%;
+	margin-left: 0px;
+	margin-right: 19px;
 }
 
-aside > ul li{
-	padding: 0;
-	margin: 0;
-	margin-bottom: 7px;
-}
-
-aside > div {
-	border-top: 370px solid white;
-	padding: 0;
+aside > #block4 {
 	background: grey;
-	height: 150px;
-	bottom: 0;
+	margin-bottom: 305px;
+}
+
+aside > #block4 > ul {
+	list-style-type: none;
+	padding: 15px 5px 15px 10px;
+	/*letter-spacing: 0.1px;*/
+	margin: 0px;
+	line-height: 20px;
+}
+
+aside > #block4 > ul > li {
+	padding: 0px 0px 2px 4px;
+}
+
+aside > #block7 {	
+	background: grey;
+	width: 185px;
+	height: 140px;
 }
 
 section {
@@ -71,14 +85,13 @@ section {
 section > header {
 	display: block;
 	background: #D4D4D4;
-	font: 14px arial;
 	margin-top: 0;
-	margin-bottom: 3%;
+	margin-bottom: 19px;
 
-	line-height: 22px;
-	padding:15px;
-	padding-left: 25px;
-	width: auto;
+	line-height: 20px;
+	padding: 5px 0px 0px 22px;
+	width: 735px;
+	height: 205px;
 }
 
 section > header > p > b,
@@ -88,11 +101,21 @@ section > header > ul > li > b  {
 
 section > header > ul {
 	list-style: none;
+	/*list-style-image: url(square.png);*/
+	padding: 0;
+	
+	margin-top: 23px;
+	margin-bottom: 23px;
 }
 
 section > header > ul > li:before {
-	content: "■ ";
-	color: #737373;
+	content: url(square.png);
+	
+}
+
+section > header > ul > li {
+	padding-left: 30px;
+	line-height: 22px;
 }
 
 section > article {
@@ -103,12 +126,14 @@ section > article {
 
 section > article > div {
 	background: #D4D4D4;
-	margin-left: 0;
-	margin-right: 3%;
-	margin-bottom: 3%;
-	width: 10em;
-	height: 12em;
+	margin: 0px 18px 17px 0px;
+	width: 135px;
+	height: 152px;
 	display: inline-block;
+}
+
+#block6_2, #block6_3, #block6_4, #block6_5, #block6_7{
+	width: 134px;
 }
 
 section > footer {
@@ -120,33 +145,36 @@ section > footer {
 section > footer > div {
 	display:inline;
 	
-	font: 14px arial;
+	width: 333px;
+	height: 180px;
 	line-height: 22px;
-	padding:15px;
+	padding: 2px 17px 20px 20px;
 	background: #D4D4D4;
-	width: 50%;
 	display: flex;
 }
 
 #block8 {
-	margin-right: 3%;
+	margin-right: 17px;
 }
 
 footer {
 	display: block;
+	display: inline-flex;
+	margin-top: 2px;
 }
 
 footer > div {
-	display: inline-flex;
-	width: 30%;
+	display: inline-block;
 	background: grey;
 }
 
 #block10 {
+	width: 290px;
+	height: 180px;
 	color: white;
 	font: 14px arial;
 	line-height: 22px;
-	padding-left: 3%;
+	padding-left: 10px;
 }
 
 #block10 > #left {
@@ -159,8 +187,10 @@ footer > div {
 }
 
 #block11 {
-	margin-left: 5%;
-	margin-right: 5%;
+	width: 297px;
+	height: 180px;
+	margin-left: 27px;
+	margin-right: 27px;
 	padding: 0;
 	color: white;
 	font: 14px arial;
@@ -169,15 +199,16 @@ footer > div {
 
 #block12_13{
 	background: white;
+	width: 310px;
+	height: 180px;
 }
 
 #block12_13 > div {
+	width: 310px;
+	height: 74px;
 	background: grey;
-	height: 45%;
-	
 }
 
 #block12 {
-	margin-bottom: 80px;
+	margin-bottom: 30px;
 }
-
