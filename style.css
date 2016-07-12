@@ -59,7 +59,7 @@ aside > #block4 {
 
 aside > #block4 > ul {
 	list-style-type: none;
-	padding: 15px 5px 15px 10px;
+	padding: 15px 5px 17px 10px;
 	/*letter-spacing: 0.1px;*/
 	margin: 0px;
 	line-height: 20px;
@@ -72,7 +72,7 @@ aside > #block4 > ul > li {
 aside > #block7 {	
 	background: grey;
 	width: 185px;
-	height: 140px;
+	height: 132px;
 }
 
 section {
@@ -126,7 +126,7 @@ section > article {
 
 section > article > div {
 	background: #D4D4D4;
-	margin: 0px 18px 17px 0px;
+	margin: 0px 18px 16px 0px;
 	width: 135px;
 	height: 152px;
 	display: inline-block;
@@ -139,7 +139,8 @@ section > article > div {
 section > footer {
 	display: block;
 	background: white;
-	display: flex;	
+	display: flex;
+	margin-bottom: 8px;	
 }
 
 section > footer > div {
@@ -148,7 +149,7 @@ section > footer > div {
 	width: 333px;
 	height: 180px;
 	line-height: 22px;
-	padding: 2px 17px 20px 20px;
+	padding: 2px 17px 19px 20px;
 	background: #D4D4D4;
 	display: flex;
 }
@@ -169,29 +170,39 @@ footer > div {
 }
 
 #block10 {
-	width: 290px;
+	width: 299px;
 	height: 180px;
 	color: white;
 	font: 14px arial;
 	line-height: 22px;
-	padding-left: 10px;
+	padding-left: 0px;
 }
 
 #block10 > #left {
 	float: left;
-	margin-right: 30%;
+
+	margin-right: 15px;
+
 }
 
 #block10 > #right {
 	float: right;
 }
 
+#block10 > #left > ul{
+	padding-left: 25px;
+}
+
+#block10 > #right > ul{
+	padding-right: 86px;
+}
+
+
 #block11 {
 	width: 297px;
 	height: 180px;
 	margin-left: 27px;
 	margin-right: 27px;
-	padding: 0;
 	color: white;
 	font: 14px arial;
 	line-height: 22px;
@@ -199,16 +210,17 @@ footer > div {
 
 #block12_13{
 	background: white;
-	width: 310px;
+	width: 308px;
 	height: 180px;
+	margin-left: 2px;
 }
 
 #block12_13 > div {
-	width: 310px;
-	height: 74px;
+	
+	height: 77px;
 	background: grey;
 }
 
 #block12 {
-	margin-bottom: 30px;
+	margin-bottom: 27px;
 }
