@@ -1,5 +1,7 @@
 ﻿body { 
-	padding: 16px 100px 100px 61px;
+	padding: 16px 0px 16px 0px;
+	margin-left:auto;
+  	margin-right:auto;
 	width: 990px;
 }
 
@@ -42,25 +44,38 @@ hr {
 	margin-left: 0px;
 }
 
+#content {
+	
+	display: table;
+	
+	border-spacing: 0px 0px;
+}
+
+#row {
+    display: table-row;
+
+}
+
 aside {
-	display: block;
+	display: table-cell;
+	
+	position: relative;
+	
 	width: 185px;
+		
 	color: white;
 	font: 14px arial;
-	float: left;
-	margin-left: 0px;
-	margin-right: 19px;
 }
 
 aside > #block4 {
 	background: grey;
-	margin-bottom: 305px;
+	margin-top: 0px;
+	padding-top: 0px;
 }
 
 aside > #block4 > ul {
 	list-style-type: none;
-	padding: 15px 5px 6px 10px;
-	/*letter-spacing: 0.1px;*/
+	padding: 22px 5px 6px 10px;
 	margin: 0px;
 	line-height: 20px;
 }
@@ -73,25 +88,33 @@ aside > #block7 {
 	background: grey;
 	width: 185px;
 	height: 132px;
+
+	position: absolute;
+    bottom: 0px;
 }
 
 section {
+	display: table-cell;
 	display: block;
 	overflow: auto;
 	font: 14px arial;
 	color: #808080;
+	margin-left: 20px;
+	padding-top: 0px;
+
 }
 
 section > header {
 	display: block;
 	background: #D4D4D4;
-	margin-top: 0;
+	margin-top: 0px;
 	margin-bottom: 19px;
 
 	line-height: 20px;
-	padding: 5px 0px 0px 22px;
+	padding: 5px 0px 5px 22px;
 	width: 735px;
-	height: 205px;
+	overflow-x:scroll;
+	
 }
 
 section > header > p > b,
@@ -101,7 +124,6 @@ section > header > ul > li > b  {
 
 section > header > ul {
 	list-style: none;
-	/*list-style-image: url(square.png);*/
 	padding: 0;
 	
 	margin-top: 23px;
@@ -138,20 +160,22 @@ section > article > div {
 
 section > footer {
 	display: block;
+	display: inline-flex;
+	
 	background: white;
-	display: flex;
-	margin-bottom: 8px;	
+	
+	width: 758px;
+	margin-bottom: 0px;	
 }
 
 section > footer > div {
-	display:inline;
-	
-	width: 333px;
-	height: 180px;
+	display: inline;
+	width: 45%;
+	overflow-x:scroll;
+
 	line-height: 22px;
-	padding: 2px 17px 19px 20px;
+	padding: 2px 10px 15px 20px;
 	background: #D4D4D4;
-	display: flex;
 }
 
 #block8 {
@@ -180,9 +204,7 @@ footer > div {
 
 #block10 > #left {
 	float: left;
-
 	margin-right: 15px;
-
 }
 
 #block10 > #right {
@@ -196,7 +218,6 @@ footer > div {
 #block10 > #right > ul{
 	padding-right: 86px;
 }
-
 
 #block11 {
 	width: 297px;
